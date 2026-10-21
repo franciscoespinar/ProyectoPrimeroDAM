@@ -12,6 +12,7 @@
 		<project.jakarta.servlet.version>6.0.0</project.jakarta.servlet.version>
 		<project.maven.war.plugin>3.2.3</project.maven.war.plugin>
 		<project.maven.compiler.plugin>3.13.0</project.maven.compiler.plugin>
+		<project.jakarta.servlet.jsp.version>3.1.1</project.jakarta.servlet.jsp.version>
 	</properties>
 	<dependencies>
 		<!-- API de Servlets para Tomcat 10.1 -->
@@ -19,6 +20,13 @@
 			<groupId>jakarta.servlet</groupId>
 			<artifactId>jakarta.servlet-api</artifactId>
 			<version>${project.jakarta.servlet.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- API JSP -->
+		<dependency>
+			<groupId>jakarta.servlet.jsp</groupId>
+			<artifactId>jakarta.servlet.jsp-api</artifactId>
+			<version>${project.jakarta.servlet.jsp.version}</version>
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
