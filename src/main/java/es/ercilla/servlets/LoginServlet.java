@@ -1,4 +1,4 @@
-package es.ejemplo.auth.web;
+package es.ercilla.servlets;
 
 import java.io.IOException;
 
