@@ -10,7 +10,7 @@
 	<persistence-unit name="aplicacionPU"
 		transaction-type="RESOURCE_LOCAL">
 
-		<class>es.ercilla.soap.relacional.modelo.Cliente</class>
+		<class>es.ercilla.persistencia.modelo.Usuario</class>
 
 		<properties>
 			<property name="jakarta.persistence.jdbc.driver"
@@ -18,9 +18,9 @@
 			<property name="jakarta.persistence.jdbc.url"
 				value="jdbc:oracle:thin:@franoracledam_medium?TNS_ADMIN=C:/fjespinar/Wallet_FRANORACLEDAM" />
 			<property name="jakarta.persistence.jdbc.user"
-				value="FRANORACLEDAM" />
+				value="AUTH_DB_USER" />
 			<property name="jakarta.persistence.jdbc.password"
-				value="3sp1n@rG@l1@n0" />
+				value="BBDD_ORACLE_PASSWORD" />
 			<property name="hibernate.dialect"
 				value="org.hibernate.dialect.OracleDialect" />
 			<property name="hibernate.hbm2ddl.auto" value="update" />
